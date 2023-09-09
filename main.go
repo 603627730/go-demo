@@ -28,4 +28,5 @@ func listCategory(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{"code": 1, "msg": err.Error()})
 	}
 	c.JSON(http.StatusOK, gin.H{"code": 0, "msg": "ok", "data": categoryList})
+
 }
